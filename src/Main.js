@@ -30,6 +30,7 @@ export const Main = () => {
 
   const allRemoveHandler = () => {
     setRandomArr([]);
+    setItem("");
   };
 
   return (
