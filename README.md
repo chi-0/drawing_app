@@ -14,3 +14,9 @@
     12.27(수): 기능구현
     12.28(목): 디자인 작업
     12.29(금): 추가 기능 제작
+
+### 설치 라이브러리
+
+- chakra
+- @fontsource/noto-sans-kr
+- react-hook-form
