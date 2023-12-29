@@ -27,7 +27,9 @@ export const Item = ({ arr, deleteItem }) => {
                 justifyContent={"space-between"}
                 key={index}
               >
-                <Text fontSize={"20px"}>- {data}</Text>
+                <Text fontSize={"20px"} mr={"5px"}>
+                  • {data}
+                </Text>
                 <Button
                   w={"fit-content"}
                   h={"fit-content"}

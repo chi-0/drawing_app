@@ -6,7 +6,7 @@ export const ListForm = ({ getItem }) => {
 
   const submitHandler = (data) => {
     const { value } = data;
-    value.trim().length > 0 && getItem(value);
+    value.trim().length > 0 && getItem(value.trim().replace(/\s{2,}/gi, " "));
     reset({ value: "" });
   };
 
@@ -16,7 +16,8 @@ export const ListForm = ({ getItem }) => {
         <FormLabel htmlFor="텍스트입력" />
         <Input
           type="text"
-          placeholder="입력하세요"
+          placeholder="무엇을 뽑을까요?"
+          _placeholder={{ fontSize: "14px", opacity: "0.4" }}
           isInvalid
           errorBorderColor="#dcdcdc"
           {...register("value", {
