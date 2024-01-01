@@ -20,3 +20,4 @@
 - chakra
 - @fontsource/noto-sans-kr
 - react-hook-form
+- gh-pages

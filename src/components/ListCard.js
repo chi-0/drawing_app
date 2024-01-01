@@ -32,7 +32,7 @@ export const ListCard = () => {
 
   return (
     <>
-      <Card w={"400px"}>
+      <Card w={{ base: "94vw", md: "400px" }}>
         <CardBody>
           <ListHeader />
           <Item arr={itemArr} deleteItem={deleteItem} />

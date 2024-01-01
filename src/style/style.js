@@ -7,6 +7,14 @@ import "@fontsource/noto-sans-kr/700.css";
 const { Card, Button, Input } = chakraTheme.components;
 
 const components = { Card, Button, Input };
+const breakpoints = {
+  base: "0px",
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+  "2xl": "1536px",
+};
 
 const styles = {
   global: {
@@ -31,4 +39,5 @@ export const _theme = extendBaseTheme({
     heading: `'Noto Sans KR', sans-serif`,
     body: `'Noto Sans KR', sans-serif`,
   },
+  breakpoints,
 });
